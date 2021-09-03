@@ -22,43 +22,47 @@ const AreaOfTraiangle = () => {
   return (
     <div>
       <h1>Calculate Area of a triangle</h1>
-      <div classNmae="container">
-        <h3>Enter first side of a triangle</h3>
-        <input
-          type="number"
-          className="input"
-          onChange={(e) => {
-            var intial = Number(e.target.value);
-            setSide1(intial);
-          }}
-        />
-        <br />
-        <h3>Enter second side of a triangle</h3>
-        <input
-          type="number"
-          className="input"
-          onChange={(e) => {
-            var quantity = Number(e.target.value);
-            setSide2(quantity);
-          }}
-        />
-        <br />
-        <h3>Enter third side of a triangle</h3>
-        <input
-          type="number"
-          className="input"
-          onChange={(e) => {
-            var current = Number(e.target.value);
-            setSide3(current);
-          }}
-        />
+      <form onSubmit={handleOnClick}>
+        <div classNmae="container">
+          <h3>Enter first side of a triangle</h3>
+          <input
+            type="number"
+            className="input"
+            onChange={(e) => {
+              var intial = Number(e.target.value);
+              setSide1(intial);
+            }}
+          />
+          <br />
+          <h3>Enter second side of a triangle</h3>
+          <input
+            required
+            type="number"
+            className="input"
+            onChange={(e) => {
+              var quantity = Number(e.target.value);
+              setSide2(quantity);
+            }}
+          />
+          <br />
+          <h3>Enter third side of a triangle</h3>
+          <input
+            required
+            type="number"
+            className="input"
+            onChange={(e) => {
+              var current = Number(e.target.value);
+              setSide3(current);
+            }}
+          />
 
-        <br />
+          <br />
 
-        <button type="submit" className="btn" onClick={handleOnClick}>
-          Tell Me!!
-        </button>
-      </div>
+          <button type="submit" className="btn">
+            Tell Me!!
+          </button>
+        </div>
+      </form>
 
       <div>{output}</div>
     </div>

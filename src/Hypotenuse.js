@@ -16,38 +16,42 @@ const Hypotenuse = () => {
   return (
     <div>
       <h1>Calculate Hypotenuse of a triangle</h1>
-      <div classNmae="container">
-        <h3>Enter base value (a) =</h3>
-        <input
-          type="number"
-          className="input"
-          onChange={(e) => {
-            var intial = Number(e.target.value);
-            setSide1(intial);
-          }}
-        />
-        <br />
-        <h3>Enter height value (b) =</h3>
-        <input
-          type="number"
-          className="input"
-          onChange={(e) => {
-            var quantity = Number(e.target.value);
-            setSide2(quantity);
-          }}
-        />
 
-        <br />
+      <form onSubmit={handleOnClick}>
+        <div classNmae="container">
+          <h3>Enter base value (a) =</h3>
+          <input
+            type="number"
+            required
+            className="input"
+            onChange={(e) => {
+              var intial = Number(e.target.value);
+              setSide1(intial);
+            }}
+          />
+          <br />
+          <h3>Enter height value (b) =</h3>
+          <input
+            type="number"
+            required
+            className="input"
+            onChange={(e) => {
+              var quantity = Number(e.target.value);
+              setSide2(quantity);
+            }}
+          />
 
-        <button type="submit" className="btn" onClick={handleOnClick}>
-          Tell Me!!
-        </button>
-      </div>
+          <br />
 
-      <div>
-        <p>Hypotenuse formula √(base² + height²)</p>
-      </div>
+          <button type="submit" className="btn">
+            Tell Me!!
+          </button>
+        </div>
 
+        <div>
+          <p>Hypotenuse formula √(base² + height²)</p>
+        </div>
+      </form>
       <div>{output}</div>
     </div>
   );
