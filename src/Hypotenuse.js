@@ -23,6 +23,8 @@ const Hypotenuse = () => {
           <input
             type="number"
             required
+            min="1"
+            step="1"
             className="input"
             onChange={(e) => {
               var intial = Number(e.target.value);
@@ -34,6 +36,8 @@ const Hypotenuse = () => {
           <input
             type="number"
             required
+            min="1"
+            step="1"
             className="input"
             onChange={(e) => {
               var quantity = Number(e.target.value);

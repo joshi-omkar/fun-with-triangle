@@ -27,6 +27,8 @@ const AreaOfTraiangle = () => {
           <h3>Enter first side of a triangle</h3>
           <input
             type="number"
+            min="1"
+            step="1"
             className="input"
             onChange={(e) => {
               var intial = Number(e.target.value);
@@ -38,6 +40,8 @@ const AreaOfTraiangle = () => {
           <input
             required
             type="number"
+            min="1"
+            step="1"
             className="input"
             onChange={(e) => {
               var quantity = Number(e.target.value);
@@ -49,6 +53,8 @@ const AreaOfTraiangle = () => {
           <input
             required
             type="number"
+            min="1"
+            step="1"
             className="input"
             onChange={(e) => {
               var current = Number(e.target.value);
