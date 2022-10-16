@@ -10,7 +10,7 @@ const Hypotenuse = () => {
 
     const ans = Math.hypot(side1, side2);
 
-    setOutput(<div className="output">The length of hypotenuse is {ans}</div>);
+    setOutput(<div className="output">The length of hypotenuse is {ans.toFixed(2)}</div>);
   };
 
   return (
