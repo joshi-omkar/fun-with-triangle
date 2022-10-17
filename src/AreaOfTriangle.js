@@ -6,7 +6,8 @@ const AreaOfTraiangle = () => {
   const [side3, setSide3] = useState(0);
   const [output, setOutput] = useState();
 
-  const handleOnClick = () => {
+  const handleOnClick = (e) => {
+    e.preventDefault();
     const s = (side1 + side2 + side3) / 2;
     const areaValue = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
 

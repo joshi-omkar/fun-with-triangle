@@ -25,7 +25,7 @@ const Nav = () => {
           Hypotenuse
         </Link>
 
-        <Link to="/areoftriangle" className="link">
+        <Link to="/areaoftriangle" className="link">
           Area of Triangle
         </Link>
       </nav>

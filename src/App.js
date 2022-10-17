@@ -15,7 +15,7 @@ export default function App() {
         <Route exact path="/" component={Quiz} />
         <Route exact path="/istriangle" component={IsTriangle} />
         <Route exact path="/hypotenuse" component={Hypotenuse} />
-        <Route exact path="/areoftriangle" component={AreaOfTriangle} />
+        <Route exact path="/areaoftriangle" component={AreaOfTriangle} />
       </Router>
     </div>
   );
