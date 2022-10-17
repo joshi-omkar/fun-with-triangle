@@ -6,7 +6,8 @@ const IsTriangle = () => {
   const [angle3, setAngle3] = useState(0);
   const [output, setOutput] = useState();
 
-  const handleOnCLick = () => {
+  const handleOnCLick = (e) => {
+    e.preventDefault();
     let total = angle1 + angle2 + angle3;
 
     if (total === 180) {
